@@ -1,0 +1,124 @@
+# JavaTestDrivenDevelopmentJUnit4-5
+Course SFPD
+Woensdag 21 oktober 2020 9u - 16u
+Donderdag 22 oktober 2020 9u - 16u
+Vrijdag 23 oktober 2020 9u - 16u
+
+Day 1 - Hands on TDD
+    First steps with TDD
+    Caeser Cipher Kata
+    
+Day 2 - Triangulation & Test double
+    More TDD concepts
+    Hangman Game Kata
+    
+//-------------------------------------------------------------------------//
+WHAT IS TDD?
+	$ Methology for developments
+	$ It brings test before implementation
+
+WHAT IS NOT TDD?
+	A testing strategy
+	
+BENIFITS:
+	$ TDD gives you an easier way to develop
+		- TDD is predictable way to develop. You'll know when you are finished
+		- TDD is development by Examples
+		- Simplify complexes problems
+	$ TDD improve the quality of the software produced
+		- You can trust your code, and the code of your team
+		- Easier to find bug
+		- You can refactor safely
+	$ TDD gives you (living) documentation
+		- The expected behavior is executed and documented
+	$ TDD is about going FASTER
+		- Reduce the time you waste on debugging
+
+TDD IS ABOUT TESTING
+	What is a good test?
+	$ Test a behavior: a good test describes a behavior not an implementation
+	$ Test first: a good test respects the F.I.R.S.T. rules
+	$ Easy to understand: a good test makes what is tested obvious
+
+UNIT TEST
+	What's an Unit Test?
+		GIVEN	
+		$ create data sets
+		$ Initialize test tools
+		WHEN
+		$ a function call
+		$ a descision
+		THEN
+		$ assertions of result
+		$ verification of an interaction
+
+TEST FIRST
+	F = fast => A unit test should not be more then few milliseconds.
+	I = Isolated => A unit test should not depends other resources.
+	R = Repeatable => The result of a unit test should always be the same on each run.
+	S = Self-verifying => A unit test decides itself if it succeed or failed.
+	T = Timely => A unit test should behave the same way no matter the timezone or date of.
+
+UNIT TEST EXAMPLE
+		String sayHello(String name) {
+			return "Hello " + name + " !";
+		}
+		
+		@Test
+		void should_say_hello_to_someone() {
+			//GIVEN
+			String name = "Florian";
+			//WHEN
+			String greetings = sayHello(name);
+			//THEN
+			Assertions.assertThat(greetings).isEqualTo("Hello Florian !")
+		}
+
+TDD IS NOT ONLY ABOUT TESTING
+	$ Safe Refactoring:
+	  Using TDD method allows you to refactor and improve design.
+	$ Business First:
+	  TDD is about Example, so about business cases.
+	$ Not Exhaustive
+	  TDD is not a testing strategy. It won't cover all uses cases by itself.
+
+TDD IS A CYCLE
+	1 - RED:
+		$ You write the simplest test that cover the next business case.
+		$ Run it to be sure the test is "RED".
+	2 - GREEN:
+		$ You write the smallest amount of code that makes the test pass.
+		$ Run it to be sure the test is "GREEN".
+	3 - REFACTOR:
+		$ Remove Duplication
+		$ Improve design
+		$ Renames
+		$ Run all for subset tests to verify it works.
+
+JAVA TOOLS FOR TESTING
+	What do we need?
+	$ Test Runner
+		- JUnit
+		- TestNG (Alternative)
+	$ Assertion Liberary
+		- AssertJ
+		- Assertions (Provided with JUnit)
+	$ Integrate test in build
+		- Maven Surefire Plugin
+		- JUnit Platform (Gradle)
+
+RULES
+	$ Don't think too much write examples
+	$ Do one thing at the time => Baby steps
+	$ Run the tests
+	$ NEVER write production code without a failing test
+	$ Commit EVERY stable version of your code (All tests are green)
+	$ Use your IDE to refactor
+	$ Use a TODO list to write down every tests thought or interrogation
+
+TDD EXAMPLES in folder JUnit Projects:
+	$ cypher
+	$ hangman
+
+//--------------------------------------------------------------------------------//
+

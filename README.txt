@@ -2,3 +2,5 @@
 
 Course Plural Sight
 Getting Started with Unit Testing with JUnit 5
+
+Example: patientintake
