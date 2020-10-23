@@ -1,0 +1,29 @@
+gitlab@gitlab.onprvp.fgov.be:Jo.Bewaert/hangman.git
+
+NEMO => making uml diagrams for large projects
+
+Indien je een java project hebt aangemaakt en je wil
+JUnit 5 toevoegen :
+
+1. rechtsklik op het project -> Add framework support
+2. Selecteer Maven
+3. open POM.iml en voeg dependencies toe:
+	<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+	<dependency>
+		<groupId>org.mockito</groupId>
+		<artifactId>mockito-all</artifactId>
+		<version>1.10.19</version>
+		<scope>test</scope>
+	</dependency>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.15.0</version>
+        </dependency>
+    </dependencies>
+	
+	
+
+
