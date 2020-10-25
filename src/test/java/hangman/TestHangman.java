@@ -1,16 +1,18 @@
 package hangman;
 
-import javafx.beans.binding.BooleanExpression;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class TestHangman {
-
+    /* Write a test for a hangman game. Guess a letter of a word(hangman). */
     @Test
-    public void testNoGuess_A() {
+    public void testLetterToUnderscore() {
+        // Given
         Hangman hangman = new Hangman("A");
-        assertThat(hangman.hint()).isEqualTo("_");
+        // When
+        hangman.value();
+        // Then
+        assertThat(hangman).isNotNull();
     }
-
 }
