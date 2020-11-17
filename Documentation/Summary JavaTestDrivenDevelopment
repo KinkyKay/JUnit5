@@ -1,7 +1,7 @@
-//-------------------------------------------------------------------------------------------------------------------//
+------------------------------------------------------------------------------------------------------------------------
                                                     OVERVIEW
-//-------------------------------------------------------------------------------------------------------------------//
- 1. WHAT IS JUNIT 5?
+------------------------------------------------------------------------------------------------------------------------
+//----- WHAT IS JUNIT 5? -----//
  JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
 
  The Junit Platform serves as a foundation for launching testing frameworks on the JVM. It also defines the TestEngine
@@ -14,16 +14,16 @@
 
  JUnit Vintage provides a TestEngine for running JUnit 3 and JUnit 4 based tests on the platform.
 
-2. SUPPORTED JAVA VERSIONS
-JUnit requires Java 8 or higher at runtime.
+//----- SUPPORTED JAVA VERSIONS ------//
+ JUnit requires Java 8 or higher at runtime.
 
-3. EXAMPLE PROJECT
-Check out the junit5-jupiter-starter-maven project
+//----- EXAMPLE PROJECT -----//
+ Check out the junit5-jupiter-starter-maven project
 
-//-------------------------------------------------------------------------------------------------------------------//
+------------------------------------------------------------------------------------------------------------------------
                                                     WRITING TESTS
-//-------------------------------------------------------------------------------------------------------------------//
-A FIRST TEST CASE:
+------------------------------------------------------------------------------------------------------------------------
+ A FIRST TEST CASE:
 
         import example.util.Calculator;
         import org.junit.jupiter.api.Test;
@@ -40,7 +40,7 @@ A FIRST TEST CASE:
 
         }
 
-1. ANNOTATIONS
+//----- ANNOTATIONS -----//
 JUnit Jupiter supports the following annotations for configuring tests and extending the framework. All core annotations
 are located in the org.junit.jupiter.api package in the junit-jupiter-api module.
 
@@ -102,7 +102,7 @@ are located in the org.junit.jupiter.api package in the junit-jupiter-api module
                             injection in a lifecycle method or test method; located in the
                             org.junit.jupiter.api.io package.
 
-    $$ Meta-Annotations and Composed Annotations $$
+    $$ --- Meta-Annotations and Composed Annotations ---$$
     JUnit Jupiter Annotations can be used as meta-annotations. That means that you can define your own composed
     annotation that will automatically inherit the semantics of its meta-annotations.
 
@@ -147,7 +147,7 @@ are located in the org.junit.jupiter.api package in the junit-jupiter-api module
             ...
         }
 
-2. TEST CLASSES AND METHODS
+//----- TEST CLASSES AND METHODS -----//
 Test Class:         any top-level class, static member class, or @Nested class that contains at least one test method.
                     test classes must be abstract and must have a single constructor.
 
@@ -161,11 +161,11 @@ Test classes, test methods and lifecycle methods are not required to be public, 
 
     EXAMPLE of a standard test class: StandardTestClass.java
 
-3. DISPLAY NAMES
+//----- DISPLAY NAMES -----//
 Test classes and test methods can declare custom display names via @DisplayName - with spaces, special characters, and
 even emojis.
 
     EXAMPLE: DisplayNameDemo.java
 
-    3.1. Display Name Generators
+    $$--- Display Name Generators ---$$
 
