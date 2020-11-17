@@ -1,0 +1,23 @@
+------------------------------------------------------------------------------------------------------------------------
+                                            WRITING YOUR FIRST TEST
+------------------------------------------------------------------------------------------------------------------------
+    $ A test is just code.
+    $ It Executes target code.
+    $ Test a class, method or function.
+    $ Check to see if the results are correct.
+    $ Done manually before test libraries appeared
+
+    //----- Benefits of Unit Testing -----//
+    $ Quick feedback
+    $ Automated regression checking
+    $ Design Aid
+    $ Improves confidence
+    $ Documentation
+
+    //----- Our Sample System: Patient Intake -----//
+    $ Schedule appointments
+    $ Collect patient information
+    $ Send appointment notifications
+
+
+

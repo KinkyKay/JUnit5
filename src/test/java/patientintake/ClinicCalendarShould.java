@@ -12,7 +12,7 @@ class ClinicCalendarShould {
    private ClinicCalendar calendar;
       /* Writing your first Test
       Its exercising several classes but not the ClinicMain class because it contains mostly methods to process the
-      users input. We will focus on the busniss process of the application.
+      users input. We will focus on the business process of the application.
       1. Create a test class
       2. Begin a new Test method with @Test
       3. Write your method starting with public void nameOfTheMethod() { }

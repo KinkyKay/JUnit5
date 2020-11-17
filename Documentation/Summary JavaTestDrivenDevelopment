@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------------------------------------
-                                                    OVERVIEW
+                                                 1. OVERVIEW
 ------------------------------------------------------------------------------------------------------------------------
 //----- WHAT IS JUNIT 5? -----//
  JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
@@ -21,7 +21,7 @@
  Check out the junit5-jupiter-starter-maven project
 
 ------------------------------------------------------------------------------------------------------------------------
-                                                    WRITING TESTS
+                                                 2. WRITING TESTS
 ------------------------------------------------------------------------------------------------------------------------
  A FIRST TEST CASE:
 
@@ -168,4 +168,15 @@ even emojis.
     EXAMPLE: DisplayNameDemo.java
 
     $$--- Display Name Generators ---$$
+    Generators can be created by implementing DisplayNameGenerator.
+
+    DISPLAYNAMEGENERATOR                BEHAVIOR
+    Standard                            Matches the standard display name generation behavior
+    Simple                              Removes trailing parentheses for methods with no parameters
+    ReplaceUnderscores                  Replaces underscores with spaces
+    IndicativeSentence                  Generates complete sentences by concantenating the names of the test and the
+                                        enclosing classes
+
+    EXAMPLE: DisplayNameGeneratorDemo.java
+
 
